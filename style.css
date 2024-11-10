@@ -11,10 +11,10 @@ body {
 
 #ryu {
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     left: 90px;
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
 }
 
 #ken {
@@ -23,7 +23,7 @@ body {
     position: absolute;
     bottom: 10px;
     right:90px;
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
 
 }

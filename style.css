@@ -1,0 +1,29 @@
+body {
+    background-image: url(images/background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom bottom;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+#ryu {
+    position: absolute;
+    bottom: 10px;
+    left: 90px;
+    width: 250px;
+    height: 250px;
+}
+
+#hoda {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    position: absolute;
+    bottom: 0px;
+    right:90px;
+    width: 250px;
+    height: 250px;
+
+}

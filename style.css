@@ -1,5 +1,5 @@
 body {
-    background-image: url(images/background.webp);
+    background-image: url(images/animated-gifs-of-fighting-game-backgrounds-50.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom bottom;
@@ -13,17 +13,17 @@ body {
     position: absolute;
     bottom: 10px;
     left: 90px;
-    width: 250px;
-    height: 250px;
+    width: 180px;
+    height: 180px;
 }
 
-#hoda {
+#ken {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     position: absolute;
-    bottom: 0px;
+    bottom: 10px;
     right:90px;
-    width: 250px;
-    height: 250px;
+    width: 180px;
+    height: 180px;
 
 }

@@ -2,6 +2,7 @@ var forward = 0;
 var isJumping = false;  
 var screenWidth = window.innerWidth;
 var characterWidth = 50; 
+var bacward = 0 ;
 function abc(event){
     
     console.log(event.keyCode);
@@ -36,18 +37,57 @@ if (event.keyCode === 32 && !isJumping) {
         character.style.bottom = "0px"; 
         isJumping = false;  
     }, 1000);
-    function resetCharacter() {
-    var character = document.getElementById("ryu");
-    character.src = "images/ryu.gif";  // Change back to the original image
+   
+
+
+var character2 =document.getElementById("ken");
+if(event.keyCode === 37){
+    if (bacward + characterWidth < screenWidth) { 
+    bacward = bacward + 10;
+    character2.style.right = bacward + "px"
+    character2.src = "images/ken-cvs-walkforward.gif"
+    }
 }
+if(event.keyCode === 39){
+    if (bacward > 0) {
+    bacward = bacward - 10;
+    character2.style.right = bacward + "px"
+    character2.src = "images/ken-walkb.gif"
+    }
+}
+if(event.keyCode === 40){
+    
+    character2.src = "images/ken-cvs-roll.gif"
+}
+if(event.keyCode === 83){
+    character2.src = "images/ryu-redhado.gif"
+}
+if (event.keyCode === 38 && !isJumping) {  
+    isJumping = true;
+    character2.classList.add("jump");
+      
+    character2.src = "images/ken-jumpf.gif"
+    
+}
+    setTimeout(function() {
+        character2.style.bottom = "0px"; 
+        isJumping = false;  
+    }, 1000);
+   
+}
+
+
+
+function resetCharacter() {
+    var character = document.getElementById("ryu");
+    character.src = "images/ryu.gif";  
 }
 function resetCharacter() {
     var character = document.getElementById("ryu");
     character.src = "images/ryu.gif"; 
     character.style.bottom = "10px" // Change back to the original image
+
 }
-
-
 
 
 window.onkeydown = abc ;

@@ -59,8 +59,8 @@ function abc(event) {
 
     
     setTimeout(function () {
-        character.style.bottom = "0px";
-        character2.style.bottom = "0px";
+        character.style.bottom = "10px";
+        character2.style.bottom = "10px";
         isJumping = false;
     }, 1500);
 }

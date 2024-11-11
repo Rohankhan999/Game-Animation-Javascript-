@@ -49,20 +49,22 @@ function abc(event) {
         }
     }
     if (event.keyCode === 40) { 
-        character2.src = "images/ken-cvs-roll.gif";
+        character2.src = "images/ken-taunts2.gif";
     }
     if (event.keyCode === 38 && !isJumping) { 
         isJumping = true;
         character2.classList.add("jump");
-        character2.src = "images/ken-jumpf.gif";
+        character2.src = "images/ken-jumpu.gif";
+    }
+    if (event.keyCode === 76) { 
+        character2.src = "images/ken-hurricane-loop.gif";
     }
 
-    
     setTimeout(function () {
         character.style.bottom = "10px";
         character2.style.bottom = "10px";
         isJumping = false;
-    }, 1500);
+    },100);
 }
 
 
@@ -75,7 +77,7 @@ function resetCharacter() {
     character.style.bottom = "10px";
 
   
-    character2.src = "images/ken.gif";
+    character2.src = "images/ken-cvs-stance.gif";
     character2.style.bottom = "10px";
 }
 
